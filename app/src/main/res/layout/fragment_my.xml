@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.pratik.analogclock.ui.MyFragment">
+
+    <com.pratik.analogclock.widget.ClockViewSurface
+        android:id="@+id/clockView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/colorPickerButton"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:id="@+id/alarmButton"
+        android:background="@drawable/ghost_button"
+        android:text="Set Alarm"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/alarmButton"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:id="@+id/unsetAlarm"
+        android:visibility="invisible"
+        android:background="@drawable/ghost_button"
+        android:text="Cancel Alarm"/>
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/ghost_buttonpink"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:text="Color Preference 1"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_below="@id/clockView"-->
+        <!--android:id="@+id/color1"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/ghost_buttongreen"-->
+        <!--android:textColor="@color/green"-->
+        <!--android:text="Color Preference 2"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/clockView"-->
+        <!--android:id="@+id/color2"/>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ghost_buttonpink"
+        android:text="Change Color"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/colorPickerButton"
+        android:layout_below="@id/clockView"/>
+
+</RelativeLayout>
